@@ -7,7 +7,6 @@ body{
 }
 .main{
     background-image: url(assets/img/bg.jpg/IN-en-20240129-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
-
     background-position: 
     center center;
     background-repeat: no-repeat;
@@ -21,7 +20,6 @@ body{
     height: 70vh;
     width: 100%;
     opacity: 0.69;
-   
     position: absolute;
     top: 0;
     background-color: black;
@@ -129,15 +127,15 @@ nav button{
 .secimg video{
     position: absolute;
     top: 51px;
-    right: 1px;
-    width: 355px;
+    right: 44px;
+    width: 435px;
 
 }
 .secimg img{
     width: 30vw;
     position: relative;
     z-index: 10;
-    
+    width: 555px;
 
 }
 section.first > div{
@@ -157,8 +155,8 @@ section{
 }
 .third video{
    
-    right: 82px;
-    width: 251px; 
+    right: 115px;
+    width: 328px; 
 }
 .faq h2{
     text-align: center;
@@ -208,4 +206,81 @@ footer .questions{
     gap: 22px;
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width: 1300px){
+    /* body{
+        background-color: red
+    }; */
+    .first{
+        flex-wrap: wrap;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        color: white;
+        gap: 55px;
+    }   
+    .secimg img{
+       
+        width: 305px;
+    }
+    .secimg video{
+        width: 220px;
+    }
+    .third video{
+        right: 55px;
+        top: 18px;
+        width: 200px;
+    }
+    .p {
+        gap: 0px;
+        padding: 12px 20px;}
+    
+    nav {
+        max-width: 80vw;
+    }
+    section {
+        padding: 70px;
+    }
+    btn-red {
+        
+        font-size: 6px;
+    }
+    .p-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .p> :first-child{
+        font-size: 45px;
+      
+       
+    }
+    .p> :nth-child(2){
+      
+        font-size: 20px;
+      
+    }
+    .p> :nth-child(3){
+       
+        font-size: 16px; 
+    }
+    .faq h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .faqbox {
+        
+        font-size: 20px;
+       
+    }
+    section.first > div :nth-child(1) {
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
 }
